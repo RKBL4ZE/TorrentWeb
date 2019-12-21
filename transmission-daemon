@@ -7,12 +7,10 @@ ENABLE_DAEMON=1
 # This directory stores some runtime information, like torrent files 
 # and links to the config file, which itself can be found in 
 # /etc/transmission-daemon/settings.json
-
-CONFIG="--no-incomplete-dir -g /content/drive/My Drive/Torrent/TorrentWeb -w /content/drive/My Drive/Media"
-DRI="/content/drive/My Drive/Torrent/TorrentWeb"
+CONFIG_DIR="/content/drive/My Drive/Torrent/TorrentWeb" 
 
 # Default options for daemon, see transmission-daemon(1) for more options
-OPTIONS="--config-dir $DRI"
+OPTIONS="--config-dir $CONFIG_DIR"
 
 # (optional) extra options to start-stop-daemon
 #START_STOP_OPTIONS="--iosched idle --nicelevel 10"
