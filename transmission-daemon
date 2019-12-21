@@ -8,10 +8,9 @@ ENABLE_DAEMON=1
 # and links to the config file, which itself can be found in 
 # /etc/transmission-daemon/settings.json
 CONFIG_DIR="/torrent/config"
-DOWN_DIR="/torrent/downloads"
 
 # Default options for daemon, see transmission-daemon(1) for more options
-OPTIONS="--no-incomplete-dir --config-dir $CONFIG_DIR --download-dir $DOWN_DIR"
+OPTIONS="--no-incomplete-dir --config-dir $CONFIG_DIR"
 
 # (optional) extra options to start-stop-daemon
 #START_STOP_OPTIONS="--iosched idle --nicelevel 10"
